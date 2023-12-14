@@ -19,3 +19,14 @@ main{
      border-radius: 50% ;
    
 }
+
+.sent{
+     background-color: white
+}
+.recived{
+     background-color: rgb(0, 138, 90);
+}
+
+.main{
+     background-image: ("../img/mine.jpg");
+}

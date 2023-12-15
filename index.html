@@ -29,10 +29,10 @@
                               <div class="col">
 
                                    <div class="height-70" v-for="(contact,index) in contacts" :key="index"
-                                        :class="activeContact==index ?'bg-secondary-subtle' : '' "
+                                        :class=" activeContact == index ? 'bg-secondary-subtle' : '' "
                                         @click="contatto_attivo(index)">
                                         <img :src="contacts[index].avatar" class="avatar mx-2" alt="">
-                                   
+
                                         {{contact.name}}
                                    </div>
 
@@ -52,18 +52,24 @@
                          </div>
 
 
-                         <!-- mi sono bloccato qui -->
-                         <div v-for="(message,index) in contacts.messages" :key="index">
-                              
-                             
-                         </div>
-                         
-                         <!-- {{chat}} -->
-                         <!-- {{contacts[activeContact].messages[0].message}} -->
+                         <div v-for="(message,index) in contacts[activeContact].messages" :key="index"
+                              :class="message.status == 'sent' ? 'inviato' : 'ricevuto'">
 
+
+                              <span>{{message.message}}</span>
+
+                         </div>
+
+                         <div>
+                              <div class="input-group mb-3 barra_mess" >
+                                   <input type="text" class="form-control" v-model="new_mess" placeholder="invia un messaggio"
+                                        aria-label="invia un messaggio" aria-describedby="button-addon2">
+                                   <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                        @click="add_new_message"><i class="fas fa-plus"></i></button>
+                              </div>
+                         </div>
                     </div>
                </div>
-          </div>
 
      </main>
 </div>

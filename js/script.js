@@ -174,12 +174,14 @@ createApp({
           contatto_attivo(index){
                this.activeContact = index;
           },
-
-          chat(){
-               // console.log(this.contacts[index].messages)
-               // for(let i;i<5 ;i++){
-               //      contacts[activeContact].messages[0].message
-               // }
+          add_new_message(){
+               this.contacts[activeContact].messages.push({
+                    date:'10/01/2020 15:51:00',
+                    message: this.new_mess,
+                    status: 'sent'
+               })
+               this.new_task = ''
           }
+         
      }
 }).mount('#app')

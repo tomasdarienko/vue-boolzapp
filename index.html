@@ -20,7 +20,7 @@
                               <div class="col d-flex align-items-center">
 
                                    <img src="./img/avatar_io.jpg" class="avatar mx-2" alt="">
-                                   <p><strong>Nome Utente</strong> </p>
+                                   <p><strong>Tomas Darienko</strong> </p>
 
                               </div>
 
@@ -28,9 +28,11 @@
                          <div class="row">
                               <div class="col">
 
-                                   <div class="height-70" v-for="(contact,index) in contacts" :key="index" :class="activeContact==index ?'bg-secondary-subtle' : '' "
+                                   <div class="height-70" v-for="(contact,index) in contacts" :key="index"
+                                        :class="activeContact==index ?'bg-secondary-subtle' : '' "
                                         @click="contatto_attivo(index)">
                                         <img :src="contacts[index].avatar" class="avatar mx-2" alt="">
+                                   
                                         {{contact.name}}
                                    </div>
 
@@ -40,15 +42,25 @@
                          </div>
 
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 ">
 
                          <div class="row height-70 bg-secondary-subtle">
                               <div class="col">
                                    <img :src="contacts[activeContact].avatar" class="avatar mx-2" alt="">
                                    <span>{{contacts[activeContact].name}}</span>
                               </div>
-
                          </div>
+
+
+                         <!-- mi sono bloccato qui -->
+                         <div v-for="(message,index) in contacts.messages" :key="index">
+                              
+                             
+                         </div>
+                         
+                         <!-- {{chat}} -->
+                         <!-- {{contacts[activeContact].messages[0].message}} -->
+
                     </div>
                </div>
           </div>

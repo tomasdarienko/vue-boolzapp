@@ -173,6 +173,13 @@ createApp({
      methods:{
           contatto_attivo(index){
                this.activeContact = index;
+          },
+
+          chat(){
+               // console.log(this.contacts[index].messages)
+               // for(let i;i<5 ;i++){
+               //      contacts[activeContact].messages[0].message
+               // }
           }
      }
 }).mount('#app')

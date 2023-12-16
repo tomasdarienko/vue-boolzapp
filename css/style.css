@@ -21,10 +21,10 @@ main{
 }
 
 .ricevuto{
-     background-color: rgb(162, 50, 50);
+     background-color: rgb(192, 192, 192);
      padding: 10px;
      border-radius: 20px;
-     margin: 50px;
+     margin: 20px;
      max-width:40% ;
 }
 .inviato{
@@ -32,8 +32,9 @@ main{
      padding: 10px;
      border-radius: 20px;
      max-width:40% ;
-     position: absolute;
-     right: 10px;
+     margin: 20px;
+     /* position: absolute;
+     right: 10px; */
 }
 
 

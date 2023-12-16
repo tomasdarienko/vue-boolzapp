@@ -174,13 +174,21 @@ createApp({
           contatto_attivo(index){
                this.activeContact = index;
           },
-          add_new_message(){
+          add_new_message(activeContact){
                this.contacts[activeContact].messages.push({
                     date:'10/01/2020 15:51:00',
                     message: this.new_mess,
                     status: 'sent'
                })
-               this.new_task = ''
+               this.new_mess = ''
+
+               setTimeout(() => {
+                    this.contacts[activeContact].messages.push({
+                         date:'10/01/2020 15:51:00',
+                         message: 'NØØØØØ',
+                         status: 'recived'
+                    })
+               },2000)
           }
          
      }

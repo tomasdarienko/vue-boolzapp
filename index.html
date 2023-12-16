@@ -25,10 +25,14 @@
                               </div>
 
                          </div>
+
+
                          <div class="row">
                               <div class="col">
+                                   
+                                   <input type="text" class="form-control"  placeholder="cerca.." v-model="cerca" @Keyup="cerca_cont" name="" id="">
 
-                                   <div class="height-70" v-for="(contact,index) in contacts" :key="index"
+                                   <div v-show="contact.visible" class="height-70" v-for="(contact,index) in contacts" :key="index"
                                         :class=" activeContact == index ? 'bg-secondary-subtle' : '' "
                                         @click="contatto_attivo(index)">
                                         <img :src="contacts[index].avatar" class="avatar mx-2" alt="">

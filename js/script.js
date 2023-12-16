@@ -189,6 +189,18 @@ createApp({
                          status: 'recived'
                     })
                },2000)
+          },
+          cerca_cont(){
+               this.contacts.forEach (elem => {
+                    
+                    if(elem.name.toLowerCase().includes(this.cerca.toLowerCase())){
+                         elem.visible = true
+                    }
+                    else{
+                         elem.visible = false
+                    }
+               });
+
           }
          
      }

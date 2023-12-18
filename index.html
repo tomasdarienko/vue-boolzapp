@@ -15,14 +15,19 @@
      <main class="p-5">
           <div class="container bg-light ">
                <div class="row">
-                    <div class="col-3  ">
+                    <div class="col-4  ">
 
-                         <div class="row height-70 bg-secondary-subtle ">
+                         <div class="row height-70 bg-secondary-subtle d-flex">
                               <div class="col d-flex align-items-center">
 
                                    <img src="./img/avatar_io.jpg" class="avatar mx-2" alt="">
                                    <p><strong>Tomas Darienko</strong> </p>
 
+                              </div>
+                              <div class="col-3 d-flex justify-content-evenly align-items-center">
+                                   <i class="fas fa-circle-notch"></i>
+                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                   <i class="fas fa-message"></i>
                               </div>
 
                          </div>
@@ -48,13 +53,19 @@
                          </div>
 
                     </div>
-                    <div class="col-9">
+                    <div class="col-8">
 
-                         <div class="row height-70 bg-secondary-subtle">
-                              <div class="col">
+                         <div class="row height-70 bg-secondary-subtle d-flex justify-content-between">
+                              <div class="col-5">
                                    <img :src="contacts[activeContact].avatar" class="avatar mx-2" alt="">
                                    <span>{{contacts[activeContact].name}}</span>
                               </div>
+                              <div class="col-2 d-flex justify-content-evenly align-items-center">
+                                   <i class="fas fa-magnifying-glass"></i>
+                                   <i class="fa-solid fa-paperclip"></i>
+                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </div>
+
                          </div>
 
                          <div class=" right_side ">

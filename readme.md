@@ -34,6 +34,8 @@ Milestone 5 - opzionale
 ●Cancella messaggio: cliccando sul messaggio appare un menu a tendina che 
 permette di cancellare il messaggio selezionato
 ● Visualizzazione ora e ultimo messaggio inviato/ricevuto nella lista dei contatti 
+
+
 Consigli utili:
 ● Si possono trascurare le scrollbar verticali, sia nel pannello dei messaggi, che nella 
 lista dei contatti
